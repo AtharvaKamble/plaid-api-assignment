@@ -147,9 +147,9 @@ Sample Input:
 
 Steps to start development server:
 
-1. Install Python dependencies via **requirements.txt**
-1. Application need three things to be running at once (docker-compose would be great in future additions)
-   1. Run the server: **python3 manage.py runserver**
-   1. Run Redis (message broker and task queue between Celery and Python): **redis-cli**
-   1. Run Celery: **celery -A assignment worker -l info**
-1. You are ready to test the API on the django rest framework UI now!
+1. Install Python dependencies via `requirements.txt`
+2. Application need three things to be running at once (`docker-compose` would be great in future additions)
+   - Run the server: `python3 manage.py runserver`
+   - Run Redis (message broker and task queue between Celery and Python): `redis-cli`
+   - Run Celery: `celery -A assignment worker -l info`
+3. You are ready to test the API on the django rest framework UI now!
